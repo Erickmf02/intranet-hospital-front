@@ -1,0 +1,31 @@
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+}
+
+.ho_buscador{
+    background-color: white;
+    border-radius: 30px;
+    padding: 4px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.ho_buscador svg{
+    color: var(--azul-3);
+}
+.ho_buscador input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: var(--azul-3);
+    flex-grow: 1;
+}
+.ho_buscador input::placeholder{
+    color: var(--azul-3);
+}

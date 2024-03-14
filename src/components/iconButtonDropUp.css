@@ -1,0 +1,73 @@
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+    --rojo-1: #ff838a;
+    --rojo-2: #ff6971;
+    --rojo-3: #E93B45;
+    --azul-1-5: rgba(137,221,241,.5);
+    --azul-1-4: rgba(137,221,241,.4);
+
+}
+
+.ho_ibtn_drop{
+    height: 32px;
+    width: 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    background-color: transparent;
+    box-shadow: 0 0 0 4px transparent;
+    border: 2px solid transparent;
+
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out, border .2s ease-in-out;
+    padding: 0;
+}
+
+.ho_ibtn_drop_svg{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ho_ibtn_drop_svg svg{
+    height: 100%;
+    width: 100%;
+}
+
+.ho_ibtn_drop:hover, .ho_ibtn_drop:active{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.4);
+    border: 2px solid black;
+}
+
+/* azul*/
+.ho_ibtn_drop-azul{
+    color: var(--azul-3);
+}
+.ho_ibtn_drop-azul:hover, .ho_ibtn_drop-azul:active{
+    background-color: var(--azul-1-5);
+    box-shadow: 0 0 0 4px var(--azul-1-4);
+    border: 2px solid var(--azul-3);
+}
+
+/*small*/
+
+.ho_ibtn_drop-sm{
+    height: 26px;
+    width: 26px;
+}
+
+.ho_ibtn_drop-sm .ho_ibtn_drop_svg svg{
+    width: 18px;
+    height: 18px;
+}
+

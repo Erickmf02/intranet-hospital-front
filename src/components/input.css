@@ -1,0 +1,99 @@
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+}
+
+.ho_form_control{
+    outline: 2px solid var(--azul-3);
+    color: var(--azul-3);;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2px 12px;
+    gap: 6px;
+    box-shadow: 0 0 0 0.25em transparent;
+    transition: box-shadow .2s ease-in-out, outline .2s ease-in-out;
+}
+.ho_form_control svg{
+    height: 24px;
+    width: 24px;
+    color: inherit;
+    flex-shrink: 0;
+}
+
+.ho_form_control_input{
+    width: 0;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: var(--azul-3);
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+.ho_form_control_input::placeholder{
+    color: var(--azul-3);
+}
+
+.ho_form_control-escribiendo{
+    box-shadow: 0 0 0 0.4em var(--azul-1);
+    outline: 2px solid var(--azul-2);
+}
+
+.ho_form_control-invalido{
+    outline: 2px solid #ff3f3f;
+    color: #ff3f3f;
+}
+.ho_form_control-invalido .ho_form_control_input::placeholder, .ho_form_control-invalido .ho_form_control_input, .ho_form_control-invalido svg{
+    color: #ff3f3f;
+}
+.ho_form_control-valido{
+    outline: 2px solid var(--azul-2);
+}
+.ho_form_error_help{
+    padding: 2px 12px 0px 12px;
+    color: #ff3f3f;
+    font-size: 16px;
+}
+.ho_form_control-disabled {
+    outline: 2px solid rgba(0, 0, 0,.3);
+    color: rgba(0, 0, 0,.3);
+    background-color: rgba(0, 0, 0,.1);
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ho_form_control-disabled svg{
+    color: inherit;
+}
+.ho_form_control-disabled .ho_form_control_input{
+    cursor: not-allowed;
+    color: rgba(0, 0, 0,.3);
+}
+.ho_form_control-disabled .ho_form_control_input::placeholder{
+    color: rgba(0, 0, 0,.4);
+}
+
+.ho_check_box{
+    border-color: var(--azul-4);
+    transition: box-shadow .2s ease-in-out;
+}
+.ho_check_box:checked{
+    background-color: var(--azul-3);
+    border-color: var(--azul-4);
+}
+.ho_check_box:focus{
+    box-shadow: 0 0 0 0.4em var(--azul-1);
+}
+.ho_check_box_help{
+    height: 24px;
+    width: 24px;
+    color: var(--azul-3);
+}

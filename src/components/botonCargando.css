@@ -1,0 +1,75 @@
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+    --rojo-1: #ff838a;
+    --rojo-2: #ff6971;
+    --rojo-3: #E93B45;
+}
+
+.ho_btn {
+    box-sizing: border-box;
+    display: flex;
+    align-items: centesr;
+    justify-content: center;
+    font-size: 24px;
+    padding: 6px 24px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+    font-weight: 500;
+}
+.ho_btn-blue{
+    background-color: var(--azul-3);
+    color: white;
+    border: 2px solid var(--azul-3);
+}
+.ho_btn-blue:hover, .ho_btn-blue:active{
+    background-color: var(--azul-2);
+    border: 2px solid var(--azul-2);
+}
+.ho_btn-disabled{
+    opacity: .5;
+    cursor: default !important;
+    user-select: none;
+}
+.ho_btn-blue:disabled{
+    background-color: var(--azul-3);
+    border: 2px solid var(--azul-3);
+    opacity: .5;
+}
+
+.ho_btn-red{
+    background-color: var(--rojo-3);
+    color: white;
+    border: 2px solid var(--rojo-3);
+}
+.ho_btn-red:hover, .ho_btn-red:active{
+    background-color: var(--rojo-2);
+    border: 2px solid var(--rojo-2);
+}
+.ho_btn-disabled{
+    opacity: .5;
+    cursor: default !important;
+    user-select: none;
+}
+.ho_btn-red:disabled{
+    background-color: var(--rojo-3);
+    border: 2px solid var(--rojo-3);
+    opacity: .5;
+}
+
+.ho_btn-small{
+    box-sizing: border-box;
+    display: flex;
+    align-items: centesr;
+    justify-content: center;
+    font-size: 16px;
+    padding: 4px 16px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+}

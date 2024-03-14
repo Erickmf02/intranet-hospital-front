@@ -1,0 +1,72 @@
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+    --rojo-1: #ff838a;
+    --rojo-2: #ff6971;
+    --rojo-3: #E93B45;
+}
+
+.ho_contenedor_usuarios{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    height: 228px;
+    overflow-y: auto;
+}
+.ho_contenedor_admins{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    height: 228px;
+    overflow-y: auto;
+}
+
+.ho_usuario_item{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4px 10px;
+    border: 2px solid white;
+    transition: background-color .2s ease-in-out, border .2s ease-in-out;
+    cursor: pointer;
+}
+
+.ho_contenedor_usuarios > .ho_usuario_item:nth-child(2n-1) {
+    background-color: white;
+    border: 2px solid white;
+}
+
+.ho_contenedor_usuarios > .ho_usuario_item:nth-child(2n) {
+    background-color: #F0F1F6;
+    border: 2px solid #F0F1F6;
+
+}
+
+.ho_contenedor_admins > .ho_usuario_item:nth-child(2n-1) {
+    background-color: white;
+    border: 2px solid white;
+}
+
+.ho_contenedor_admins > .ho_usuario_item:nth-child(2n) {
+    background-color: #F0F1F6;
+    border: 2px solid #F0F1F6;
+}
+
+.ho_usuario_item:hover{
+    border: 2px solid var(--azul-3) !important;
+}
+.ho_usuario_item-selected{
+    background-color: var(--azul-3) !important;
+    border: 2px solid var(--azul-3) !important;
+    color: white;
+}

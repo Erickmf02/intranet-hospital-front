@@ -1,0 +1,37 @@
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+}
+
+.ho_boton_add_carpeta_container{
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ho_boton_add_carpeta{
+    color: var(--azul-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 0px transparent;
+    transition: all .2s ease-in-out;
+    border: none;
+    padding: 0;
+}
+.ho_boton_add_carpeta:hover, .ho_boton_add_carpeta:active{
+    transform: scale(1.25);
+    box-shadow: 0px 0px 0px 2px var(--azul-4);
+    color: var(--azul-4);
+}
+.ho_boton_add_carpeta svg{
+    width: 80px;
+    height: 80px;
+}

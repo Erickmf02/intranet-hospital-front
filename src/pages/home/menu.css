@@ -1,0 +1,259 @@
+/* Estructura */
+.mi_contenedor_padreH {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor_secundario_home {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 767px) {
+    .contenedor_secundario_home {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Header */
+.mi_header {
+    color: rgb(0, 0, 0);
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+}
+
+.mi_textos-header {
+    z-index: 100;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 100px;
+    left: 35px;
+    height: 100%;
+    width: 100%;
+}
+
+.mi_icono_header {
+    font-size: 2rem;
+}
+
+.mi_contenedor_header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.mi_contenedor_header h3 {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .mi_contenedor_header h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mi_header {
+        height: 35%;
+        width: 100%;
+    }
+}
+
+.mi_imagen_contenedor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mi_linea {
+    height: 20px;
+    background-color: #084D56;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0%;
+}
+
+/* Enlaces */
+.mi_contenedor_enlaces {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .mi_contenedor_enlaces {
+        width: 80%;
+        order: 2;
+    }
+}
+
+.mi_enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mi_enlaces li a {
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.mi_enlaces li:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease;
+}
+
+.mi_enlaces li:hover a {
+    color: #07292e;
+    transition: color 0.3s ease;
+}
+
+.mi_titulo_enlaces {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Accesos directos */
+.mi_icono_acceso_directo {
+    height: 70%;
+    width: 70%;
+    color: white;
+}
+
+.mi_titulo_acceso_directo {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.mi_contenedor_acceso_directo {
+    width: 100%;
+    margin-top: 5%;
+    flex-direction: column;
+    order: 2;
+}
+
+@media only screen and (max-width: 767px) {
+    .mi_contenedor_acceso_directo {
+        width: 100%;
+        margin-top: 5%;
+        flex-direction: row;
+        order: 1;
+        margin-left: 20px;
+    }
+}
+
+.mi_acceso_directo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Iconos acceso directo */
+.mi_comite_acceso_directo {
+    background-color: #F17000;
+    margin-left: 30px;
+}
+
+.mi_comite_acceso_directo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.mi_calidad_acceso_directo {
+    background-color: #259FBE;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .mi_calidad_acceso_directo {
+        margin-left: 20px;
+    }
+ 
+}
+
+
+.mi_calidad_acceso_directo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.mi_dirección_acceso_directo {
+    background-color: #259FBE;
+    margin-left: 30px;
+}
+
+.mi_dirección_acceso_directo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.mi_info_acceso_directo {
+    background-color: #F17000;
+    margin-left: 30px;
+}
+
+.mi_info_acceso_directo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.mi_icono {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .mi_icono {
+        width: 4rem;
+        height: 4rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+ 
+}
+
+.mi_texto_icono p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .mi_texto_icono p {
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #084D56;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+

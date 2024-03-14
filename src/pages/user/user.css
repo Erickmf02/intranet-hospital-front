@@ -1,0 +1,88 @@
+.mi_imagen_fondo{ 
+position: relative; /* Asegura que la tarjeta esté posicionada relativa a este contenedor */
+width: 100%;
+height: 100vh;
+filter: blur(10px);
+z-index: -1000;
+}
+.mi_tarjeta {
+  position: absolute; /* Posiciona la tarjeta en relación con el contenedor .body */
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  text-align: center;
+  width: 90%;
+  height: 90%;
+  max-width: 600px;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  
+}
+.mi_contenedor_user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Estilos para la foto de perfil redonda */
+.imagen-contenedor-redondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  display: block;
+
+}
+
+.imagen-contenedor-redondo img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 0%;
+  align-items: center;
+}
+
+
+/* Estilo para el botón de elegir foto */
+.boton_elegir_foto {
+  cursor: pointer;
+  padding: 15px;
+  background-color: #259FBE;
+  border-radius: 5px;
+  width: 230px;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+.boton_elegir_foto:hover{
+  background-color: #45C1DF;
+
+}
+
+/* Consulta de medios para pantallas pequeñas (ejemplo: hasta 600px) */
+@media screen and (max-width: 600px) {
+  .mi_tarjeta {
+    width: 95%;
+    padding: 15px;
+  }
+
+  
+  .mi_contenedor_user{
+    width: 100%;
+  }
+}

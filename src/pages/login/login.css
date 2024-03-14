@@ -1,0 +1,31 @@
+:root{
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+}
+
+.ho_logo_hospital{
+    height: 84px;
+}
+.ho_bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: min-content;
+    height: min-content;
+    border: 4px solid var(--azul-3);
+    color: var(--azul-3);
+    border-radius: 50%;
+}
+.ho_bubble svg{
+    height: 38px;
+    width: 38px;
+}
+.ho_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 159, 190, 0.55);
+}

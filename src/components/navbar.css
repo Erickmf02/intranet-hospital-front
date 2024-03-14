@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.ho_navbar{
+    padding: 0;
+    background-color: white;
+    z-index: 1000;
+    height: auto;
+}
+.ho_navbar_logo_hospital {
+    height: 50px;
+    width: auto;
+}
+
+.ho_nav-item{
+    background-color: transparent;
+}
+.ho_nav-item:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}

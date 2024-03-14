@@ -1,0 +1,124 @@
+body {
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+    height: 1px;
+}
+html {
+    height: fill-available;
+    height: -webkit-fill-available;
+}
+#root, #app{
+    min-height: 100%;
+    height: 1px;
+}
+
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+    --rojo-1: #ff838a;
+    --rojo-2: #ff6971;
+    --rojo-3: #E93B45;
+}
+
+.no_e{
+    pointer-events: none;
+}
+
+.ho_bg_azul_1{
+    background-color: var(--azul-1) !important;
+}
+.ho_bg_azul_2{
+    background-color: var(--azul-2) !important;
+}
+.ho_bg_azul_3{
+    background-color: var(--azul-3) !important;
+}
+.ho_bg_azul_4{
+    background-color: var(--azul-4) !important;
+}
+.ho_bg_azul_5{
+    background-color: var(--azul-5) !important;
+}
+.ho_bg_rojo_1{
+    background-color: var(--rojo-1);
+}
+.ho_bg_rojo_2{
+    background-color: var(--rojo-2);
+}
+.ho_bg_rojo_3{
+    background-color: var(--rojo-3);
+}
+.ho_bg_white{
+    background-color: white;
+}
+
+
+.ho_color_azul_1{
+    color: var(--azul-1) !important;
+}
+.ho_color_azul_2{
+    color: var(--azul-2) !important;
+}
+.ho_color_azul_3{
+    color: var(--azul-3) !important;
+}
+.ho_color_azul_4{
+    color: var(--azul-4) !important;
+}
+.ho_color_azul_5{
+    color: var(--azul-5) !important;
+}
+
+
+.ho_color_white{
+    color: #ffffff !important; 
+}
+
+.ho_color_negro_muted {
+    color : rgba(0, 0, 0, .5) !important;
+}
+
+.ho_fs_12 {
+    font-size: 12px !important;
+}
+.ho_fs_14 {
+    font-size: 14px !important;
+}
+.ho_fs_16 {
+    font-size: 16px !important;
+}
+.ho_fs_20 {
+    font-size: 20px !important;
+}
+.ho_fs_24 {
+    font-size: 24px !important;
+}
+.ho_fs_32 {
+    font-size: 32px !important;
+}
+
+.hover_scale{
+    transition: transform .2s ease-in-out;
+}
+.hover_scale:hover{
+    transform: scale(1.2);
+}
+
+.hover_outline{
+    outline: 2px solid transparent;
+    transition: outline .2s ease-in-out;
+}
+.hover_outline:hover{
+    outline: 2px solid black;
+}
+.hover_outline_azul_3{
+    outline: 2px solid transparent;
+    transition: outline .2s ease-in-out;
+}
+.hover_outline_azul_3:hover{
+    outline: 2px solid var(--azul-3);
+}

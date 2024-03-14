@@ -1,0 +1,35 @@
+.ho_grid{
+    padding: 0 12px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    overflow: hidden;
+
+}
+
+@media (min-width: 576px) {
+    .ho_grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .ho_grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    .ho_grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (min-width: 1200px) {
+    .ho_grid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media (min-width: 1400px) {
+    .ho_grid{
+        grid-template-columns: repeat(8, 1fr);
+    }
+}

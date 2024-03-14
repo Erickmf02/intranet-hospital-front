@@ -1,0 +1,143 @@
+.mi_contenedor_descripcion{
+    text-align: center;
+}
+.mision_vision{
+    background-color: #259FBE;
+    display: flex;
+    justify-content: space-between;
+    color:aliceblue;
+    height: 400px;
+    font-size: 20px;
+}
+.mision{
+    width: 50%;
+    height: 50%;
+    margin: 5%;
+    padding: 5%;
+    margin-top: 1%;
+}
+.mision p{
+    text-align: left;
+
+}
+.vision{
+    width: 50%;
+    height: 50%;
+    margin: 5%;
+    padding: 5%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+.vision p{
+    text-align: left;
+}
+.titulo_misionvision{
+    padding: 2%;
+}
+.mi_tarjeta_info{
+        border: 1px solid #ddd; /* Borde sólido con color gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 8%; /* Espaciado interno */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        margin-bottom: 20px; /* Agrega espacio inferior para separar tarjetas */
+        margin: 6%;
+        width: 50%; /* Adjust the width based on your layout preferences */
+        font-size: 20px;
+        width: 50%; /* Adjust the width based on your layout preferences */
+}
+
+.contenedor_historia{
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+    color: #259FBE;
+
+}
+.mi_mapa{
+    object-fit: contain;
+    
+}
+
+.mi_mapa_container{
+    position: relative;
+    z-index: 99;
+    height: 90vh;
+    width: 90vw;
+   
+}
+
+.zoom_buttons{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+
+}
+.boton_zoom{
+    background-color: white;
+    border: 3px solid;
+    border-color: #259FBE;
+    border-radius: 5px;
+    padding: 10px;
+    color:#259FBE
+}
+
+
+.mi_contenedor_img_mapa{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .mi_contenedor_descripcion {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .mi_organigrama {
+        width: 100%;
+    }
+
+    .mi_tarjeta_info {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 5% auto; /* Center the element horizontally and adjust the margin */
+        font-size: 15px;
+    }
+
+    .contenedor_historia {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 5% auto; /* Center the element horizontally and adjust the margin */
+        flex-direction: column;
+    }
+
+    .mision_vision {
+        flex-direction: column; /* Arrange items in a column */
+        height: auto; /* Adjust height to fit content */
+    }
+
+    .mision {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height to fit content */
+        margin: 5% auto; /* Center the element horizontally and adjust the margin */
+    }
+
+    .vision {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Adjust height to fit content */
+        margin: 5% auto; /* Center the element horizontally and adjust the margin */
+    }
+
+    .titulo_misionvision {
+        padding: 2%;
+        text-align: center; /* Center the text */
+    }
+
+    .mision p,
+    .vision p {
+        text-align: justify; /* Justify the text */
+    }
+
+    .mision_vision p {
+        font-size: 15px;
+    }
+}

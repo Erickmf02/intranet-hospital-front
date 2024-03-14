@@ -1,0 +1,85 @@
+:root{
+    --azul-5: #166073;
+    --azul-4: #1E829C;
+    --azul-3: #259FBE;
+    --azul-2: #45C1DF;
+    --azul-1: #89DDF1;
+}
+
+.ho_carta_carpeta{
+    box-sizing: content-box;
+    background-color: var(--azul-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .2s ease-in-out;
+    color: var(--azul-3);
+    text-decoration: none;
+}
+.ho_carta_carpeta_color{
+    min-height: 152px;
+    height: 100%;
+}
+
+.ho_carta_carpeta:hover{
+    color: var(--azul-4);
+    box-shadow:  0px 4px 6px 0px rgba(0, 0, 0, 0.25), 0px 0px 0px 2px var(--azul-4);
+}
+
+.ho_carta_carpeta_texto{
+    padding: 6px 12px;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ho_carta_carpeta_button_container{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 36px;
+    height: 36px;
+}
+.ho_carta_carpeta_button{
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 0px 0px transparent;
+    transition: border .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    z-index: 10;
+}
+.ho_carta_carpeta_button:hover, .ho_carta_carpeta_button:active, .ho_carta_carpeta_button:focus {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, .4);
+}
+.ho_carta_carpeta_button svg{
+    height: 24px;
+    width: 24px;
+}
+
+.ho_contenedor_cartas_carpetas .col:nth-child(4n-3) .ho_carta_carpeta .ho_carta_carpeta_color {
+    background-color: var(--azul-1);
+}
+.ho_contenedor_cartas_carpetas .col:nth-child(4n-2) .ho_carta_carpeta .ho_carta_carpeta_color {
+    background-color: var(--azul-2);
+}
+.ho_contenedor_cartas_carpetas .col:nth-child(4n-1) .ho_carta_carpeta .ho_carta_carpeta_color {
+    background-color: var(--azul-3);
+}
+.ho_contenedor_cartas_carpetas .col:nth-child(4n) .ho_carta_carpeta .ho_carta_carpeta_color {
+    background-color: var(--azul-2);
+}
